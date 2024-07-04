@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dishes</title>
+    <link rel="icon" href="./Images/Restaurants/download.png" type="image/icon type">
+<link rel="stylesheet" href="dishes.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>Foodies.</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a class="active" href="dishes.html">dishes</a>
+            <a href="#" onclick="openAbout()">about</a>
+            <a class="feed" id="feedback">feedback</a>
+            <a href="contact.html" >Contact us</a>
+            <a href="#">Orders</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+
+         <!--search form-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close1"></i>
+    </form>
+    <!--Search Form ends-->
+    </header>
+
+
+<!--Rating Form starts-->
+
+<div class="back">
+    <div class="container1" id="co1">
+        <div class="post">
+            <div class="text">Thanks for Rating us!</div>
+            <div class="edit">Edit</div>
+            <i class="fas fa-times" id="close"></i>
+    
+        </div>
+        <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+            <i class="fas fa-times" id="close"></i>
+            <h4></h4>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe your experience"></textarea>
+    
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+        </div>    
+    </div>
+    </div>
+<!--Rating form ends-->
+<section>
+    <h3>Dishes</h3>
+    </section>
+<section class="barb" id="biryani">
+    <h1 class="barbeque">Restaurants</h1>
+    <hr class="line"> 
+    <div class="box-container">
+    <div class="box">
+        <a href="barbeque.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_OD-vYR0VrQHwppeVZtHC-0yV1Y0lGD3UUg&usqp=CAU"></a>
+        <h3>Barbeque</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="desilicious.html"><img src="data:image/png;base64,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"></a>
+        <h3>Desilicious</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="paradise.html"><img src="https://static.toiimg.com/thumb/resizemode-72,width-1280,height-720,msid-89515763/89515763.jpg"></a>
+        <h3>Paradise</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Pizza ,Burger, Bread</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="dosa dreams.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9zrFeZ1TtpoBXB3gdeq0kfd3Wf5Cyx7rtw&usqp=CAU"></a>
+        <h3>Dosa dreams</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        
+        
+
+        </div>
+        </section>
+
+
+
+
+</section>
+<div id="about" class="about">
+    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="about-overlay">
+        <h1>About us</h1>
+        <p>Launched in 2021, Our technology platform connects customers,<br> 
+        restaurant partners and delivery partners, serving their multiple needs. <br>
+        Customers use our platform to search and discover restaurants, read and write customer 
+        generated reviews and view and upload photos,<br> order food delivery, book a table and make 
+        payments while dining-out at restaurants. On the other hand,<br> we provide restaurant partners 
+        with industry-specific marketing tools which enable them to engage and acquire customers<br> to 
+        grow their business while also providing a reliable <br>and efficient last mile delivery service. 
+        We also operate a one-stop procurement solution, <br>Hyperpure, which supplies high quality ingredients 
+        and kitchen products to restaurant partners.<br> We also provide our delivery partners with transparent 
+        and flexible earning opportunities. </p>
+    </div>
+</div>
+
+<!--Footer Section-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col">
+                <ul>
+                    <i class="fa fa-utensils"></i>
+                    <span>Foodies.</span>
+                </ul>
+                <div class="map">
+                    <ul>
+                        <i class="fa fa-map-marker"></i>
+                            <span>5th Floor,
+                                A-118,Sangareddy, Hyderabad, Telangana - 502001
+                            </span>
+                    </ul>
+                    </div>
+                <div class="mail">
+                    <ul>
+                        <i class="fas fa-inbox"></i>
+                        <span>
+                            support@foodies.com
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Foodies</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Payment policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">My orders</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment options</a></li>
+
+                </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Order Now</h4>
+                    <ul>
+                        <li><a href="#">Biryani's</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Starters</a></li>
+                        <li><a href="#">Fast food</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+            
+
+</footer>
+
+<!--Home  ends-->
+
+    
+
+    <!--Java Script-->
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll=() => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+        document.querySelector('#search-icon').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector('#close1').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector("#feedback").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+        document.querySelector("#close").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+    
+        btn.onclick = () =>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () =>{
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+        return false;
+    }
+    function openAbout(){
+        document.getElementById("about").style.width = "100%";
+
+    }
+    function closeNav(){
+        document.getElementById("about").style.width = "0%";
+    }
+   
+       
+    </script>
+    <!--JavaScript ends -->
+
+</body>
+</html>
